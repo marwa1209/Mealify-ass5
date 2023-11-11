@@ -1,0 +1,47 @@
+:root:has(.mode:checked) {
+  /* colors */
+  --default-color: #fff;
+  --main-color: #C17E1F;
+  --btn-hover-color: #d78c23;
+  --even-sections-color: #252525;
+  --ood-sections-color-nav: #171717;
+  --ood-sections-color: #202020;
+  --secondary-color: #fff;
+  --intermediate-color: #9f9f98;
+  --color-btn-hover: #000;
+  --color-btn-color: #000;
+  --light-bg: #000;
+  --color-black:#fff;
+  --opacity-bg:#0009;
+  --input-bg-color:#0d0d0d;
+  }
+  
+  :root:has(.mode:checked) body {
+    color: #fff;
+  }
+  :root:has(.mode:checked) #header .main .header-content h2 {
+    color: var(--secondary-color);
+
+  }
+  :root:has(.mode:checked) #header .main .header-content p {
+
+    color:var(--intermediate-color);
+  }
+  :root:has(.mode:checked) .mode-group .dark {
+    display: none;
+  }
+  
+  :root:has(.mode:checked) .mode-group .light {
+    display: block;
+  }
+  
+
+  :root:has(.mode:checked) #chefs .chefs-cards .card figure:before {
+    background-image: url("../images/chefs/team-shape-dark.svg");
+  }
+  
+  :root:has(.mode:checked) #chefs .chefs-cards .card{
+    background-color: #171717;
+
+}
+  
